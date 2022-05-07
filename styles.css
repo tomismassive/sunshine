@@ -1,0 +1,46 @@
+* {
+  background-color: #161923;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+}
+
+ul li {
+  font-size: 50px;
+  color: #3cb371;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.ligame {
+  font-size: 25px;
+  color: #3cb371;
+  display: inline-block;
+  padding-right: 15px;
+}
+.test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image {
+  padding-top: 15px;
+  max-width: 25%;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+.game {
+  color: #3cb371;
+}
+
+ul {
+  padding: 0;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
