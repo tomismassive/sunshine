@@ -29,6 +29,10 @@ ul li {
   max-width: 25%;
 }
 
+img {
+  border-radius: 15%;
+}
+
 li:hover {
     text-decoration: underline;
 }
