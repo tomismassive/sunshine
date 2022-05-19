@@ -48,3 +48,19 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+
+.row::after {
+	content: ""
+	display: table;
+	clear: both;
+}
+
+.column img {
+  width: 100%;
+}
+
+.column{
+	float: left;
+	width: 25%;
+	padding: 20px;
+}
