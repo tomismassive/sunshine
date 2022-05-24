@@ -2,6 +2,7 @@
   background-color: #161923;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
+  color: #3cb371;
 }
 
 ul li {
@@ -34,6 +35,10 @@ img {
 }
 
 li:hover {
+    text-decoration: underline;
+}
+
+#link:hover {
     text-decoration: underline;
 }
 .game {
