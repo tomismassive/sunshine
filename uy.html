@@ -16,7 +16,7 @@
       <p><u><b>Step 2.</b></u> Search any video you want!</p>
       </center>
       <nav class="nav">
-        <a href="index.html" target="_self" class="nav__link nav__link--active">
+        <a href="index.html" class="nav__link">
           <span class="material-icons nav__icon">wb_twighlight</span>
           <span class="nav__text">sunshine</span>
         </a>
@@ -28,5 +28,18 @@
           <span class="material-icons">menu_book</span>
           <span class="nav__text">guides</span>
         </a>
-</head>
+    <script>
+    $(document).ready(function(){
+          if (("standalone" in window.navigator) && window.navigator.standalone) {
+            // for ios apps
+            $('a').on('click', function(e){
+              e.preventdefault();
+              var new_location = $(this).attr('href');
+              if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined){
+                window.location = new_location;
+              }
+              });
+              }
+              });</script>
+  </head>
 </html>

@@ -11,6 +11,19 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+      <script>
+    $(document).ready(function(){
+          if (("standalone" in window.navigator) && window.navigator.standalone) {
+            // for ios apps
+            $('a').on('click', function(e){
+              e.preventdefault();
+              var new_location = $(this).attr('href');
+              if (new_location != undefined && new_location.substr(0, 1) != '#' && $(this).attr('data-method') == undefined){
+                window.location = new_location;
+              }
+              });
+              }
+              });</script>
   </head>
   <body>
     <h1>guides</h1>
